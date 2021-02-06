@@ -1,0 +1,5 @@
+gunicorn
+flask
+line-bot-sdk
+mysql-connector-python
+APScheduler==3.0.0
