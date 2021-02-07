@@ -1,8 +1,8 @@
 # Line機器人排程程式
 # 2021/02/05 蘇彥庭
 import datetime
-import urllib
 import json
+import requests
 import mysql.connector
 from apscheduler.schedulers.blocking import BlockingScheduler
 from linebot import LineBotApi, WebhookHandler
@@ -102,7 +102,7 @@ def RemindTmrClass():
 # 防止睡眠
 def DoNotSleep():
     url = "https://linebotceb102.herokuapp.com/"
-    conn = urllib.request.urlopen(url)
+    r = requests.get(url)
 
 
 # 開始建立排程任務
