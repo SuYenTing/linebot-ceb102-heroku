@@ -82,10 +82,10 @@ def callback():
         <span>您好！ 關於此Line機器人的詳細資訊可參考<a href='https://github.com/SuYenTing/linebot-ceb102-heroku'>GitHub專案說明</a></span>
         '''
         return outstr
-
+    
+    # 處理POST
     elif request.method == 'POST':
         
-        # 處理POST
         # get X-Line-Signature header value: 驗證訊息來源
         signature = request.headers['X-Line-Signature']
 
